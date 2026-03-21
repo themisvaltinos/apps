@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Xeri (ξερή) — Privacy Policy</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.65;
+      color: #e8e8ed;
+      background: #0a0f14;
+      min-height: 100vh;
+    }
+
+    .hero {
+      background: linear-gradient(160deg, #0d3320 0%, #0a1a12 40%, #0a0f14 100%);
+      padding: 3.5rem 1.5rem 2.5rem;
+      text-align: center;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+
+    .hero h1 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.25rem;
+    }
+
+    .hero .subtitle {
+      font-size: 0.95rem;
+      opacity: 0.5;
+    }
+
+    .hero .back {
+      display: inline-block;
+      margin-top: 1rem;
+      font-size: 0.85rem;
+      color: #34d399;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(52,211,153,0.3);
+      transition: border-color 0.2s;
+    }
+
+    .hero .back:hover { border-color: #34d399; }
+
+    .container {
+      max-width: 38rem;
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem 4rem;
+    }
+
+    .section {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 16px;
+      padding: 1.75rem 1.5rem;
+      margin-bottom: 1.25rem;
+      transition: border-color 0.2s;
+    }
+
+    .section:hover { border-color: rgba(255,255,255,0.14); }
+
+    .section h2 {
+      font-size: 0.95rem;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: #34d399;
+      margin-bottom: 0.6rem;
+    }
+
+    .section p {
+      font-size: 0.93rem;
+      color: rgba(232,232,237,0.78);
+    }
+
+    .section p + p { margin-top: 0.5rem; }
+
+    .section a {
+      color: #34d399;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(52,211,153,0.3);
+      transition: border-color 0.2s;
+    }
+
+    .section a:hover { border-color: #34d399; }
+
+    .updated {
+      text-align: center;
+      font-size: 0.8rem;
+      opacity: 0.4;
+      margin-bottom: 2rem;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.8rem;
+      opacity: 0.35;
+      padding: 2rem 1rem;
+    }
+
+    @media (max-width: 480px) {
+      .hero { padding: 2.5rem 1.25rem 1.75rem; }
+      .hero h1 { font-size: 1.35rem; }
+      .container { padding: 1.5rem 1rem 3rem; }
+      .section { padding: 1.25rem 1.15rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="hero">
+    <h1>Privacy Policy</h1>
+    <p class="subtitle">Xeri (ξερή) — iOS App</p>
+    <a class="back" href="xeri.html">← Back to Xeri support</a>
+  </div>
+
+  <div class="container">
+    <p class="updated">Last updated: <span id="d"></span></p>
+
+    <div class="section">
+      <h2>Overview</h2>
+      <p>This policy describes how the Xeri iOS app ("the App") handles your information. The App is published by the developer identified on the App Store listing.</p>
+    </div>
+
+    <div class="section">
+      <h2>Information we collect</h2>
+      <p>The App does not require you to create an account. We do not embed third-party analytics, advertising, or tracking SDKs.</p>
+      <p>Your preferences (such as sound settings and difficulty level) are stored locally on your device and are not transmitted to any server.</p>
+    </div>
+
+    <div class="section">
+      <h2>Game Center</h2>
+      <p>If you use online multiplayer, Apple's Game Center handles matchmaking, player identities, and related services under your Apple ID and Apple's own terms and privacy policy.</p>
+    </div>
+
+    <div class="section">
+      <h2>In-app purchases</h2>
+      <p>Purchases are processed entirely by Apple through the App Store. We do not receive or store your payment card details.</p>
+    </div>
+
+    <div class="section">
+      <h2>Changes to this policy</h2>
+      <p>We may update this policy from time to time. The "Last updated" date at the top of this page will change when we do.</p>
+    </div>
+
+    <div class="section">
+      <h2>Contact</h2>
+      <p>Questions or concerns? Email <a href="mailto:themis@valtinos.com">themis@valtinos.com</a>.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>© <span id="y"></span> Themistoklis Valtinos.</p>
+  </footer>
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+    document.getElementById('d').textContent = new Date().toISOString().slice(0, 10);
+  </script>
+</body>
+</html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Themis Valtinos — software engineer. Apps, games and projects." />
+  <meta name="theme-color" content="#0a0a0f" />
+  <title>Themis Valtinos — Developer</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      color: #e8e8ed;
+      background: #0a0a0f;
+      min-height: 100vh;
+    }
+
+    .page {
+      max-width: 42rem;
+      margin: 0 auto;
+      padding: 4.5rem 1.5rem 4rem;
+    }
+
+    /* ─── Header ─── */
+
+    .header {
+      text-align: center;
+      margin-bottom: 3.5rem;
+    }
+
+    .avatar {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #34d399 0%, #3b82f6 100%);
+      margin: 0 auto 1.25rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      font-weight: 700;
+      color: #0a0a0f;
+      letter-spacing: -0.03em;
+      box-shadow: 0 0 0 3px rgba(52,211,153,0.15), 0 8px 32px rgba(0,0,0,0.4);
+    }
+
+    .header h1 {
+      font-size: 1.75rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.35rem;
+    }
+
+    .header .role {
+      font-size: 0.95rem;
+      opacity: 0.5;
+      font-weight: 500;
+    }
+
+    .header .bio {
+      font-size: 0.95rem;
+      opacity: 0.65;
+      max-width: 30rem;
+      margin: 0.75rem auto 0;
+      line-height: 1.55;
+    }
+
+    /* ─── Section ─── */
+
+    .section-title {
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: rgba(232,232,237,0.35);
+      margin-bottom: 1rem;
+      padding-left: 0.25rem;
+    }
+
+    /* ─── App Card ─── */
+
+    .app-card {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 18px;
+      padding: 1.35rem 1.5rem;
+      margin-bottom: 1rem;
+      text-decoration: none;
+      color: inherit;
+      transition: border-color 0.2s, transform 0.15s, box-shadow 0.2s;
+    }
+
+    .app-card:hover {
+      border-color: rgba(52,211,153,0.35);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 28px rgba(0,0,0,0.3);
+    }
+
+    .app-icon {
+      width: 60px;
+      height: 60px;
+      border-radius: 14px;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.75rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+
+    .app-icon.xeri {
+      background: linear-gradient(145deg, #166534 0%, #0d3320 100%);
+    }
+
+    .app-info {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .app-info h3 {
+      font-size: 1.05rem;
+      font-weight: 600;
+      margin-bottom: 0.15rem;
+    }
+
+    .app-info h3 .greek {
+      font-weight: 500;
+      opacity: 0.6;
+      font-size: 0.95rem;
+    }
+
+    .app-info .desc {
+      font-size: 0.85rem;
+      opacity: 0.55;
+      line-height: 1.45;
+    }
+
+    .app-info .tags {
+      display: flex;
+      gap: 0.4rem;
+      margin-top: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    .tag {
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+      padding: 0.2rem 0.55rem;
+      border-radius: 6px;
+      background: rgba(52,211,153,0.12);
+      color: #34d399;
+    }
+
+    .tag.blue {
+      background: rgba(59,130,246,0.12);
+      color: #60a5fa;
+    }
+
+    .arrow {
+      font-size: 1.1rem;
+      opacity: 0.3;
+      flex-shrink: 0;
+      transition: opacity 0.2s, transform 0.2s;
+    }
+
+    .app-card:hover .arrow {
+      opacity: 0.7;
+      transform: translateX(3px);
+    }
+
+    /* ─── Coming Soon ─── */
+
+    .coming-soon {
+      text-align: center;
+      padding: 2.5rem 1rem;
+      opacity: 0.25;
+      font-size: 0.85rem;
+      font-weight: 500;
+    }
+
+    /* ─── Footer ─── */
+
+    footer {
+      text-align: center;
+      font-size: 0.78rem;
+      opacity: 0.3;
+      padding: 3rem 1rem 2rem;
+      border-top: 1px solid rgba(255,255,255,0.05);
+      margin-top: 2rem;
+    }
+
+    footer a {
+      color: #34d399;
+      text-decoration: none;
+    }
+
+    @media (max-width: 480px) {
+      .page { padding: 3rem 1.15rem 3rem; }
+      .header { margin-bottom: 2.5rem; }
+      .header h1 { font-size: 1.45rem; }
+      .app-card { gap: 1rem; padding: 1.15rem 1.15rem; }
+      .app-icon { width: 50px; height: 50px; font-size: 1.4rem; border-radius: 12px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="page">
+
+    <div class="header">
+      <div class="avatar">TV</div>
+      <h1>Themistoklis Valtinos</h1>
+      <p class="role">Software Engineer</p>
+    </div>
+
+    <p class="section-title">Apps &amp; Games</p>
+
+    <a class="app-card" href="xeri.html">
+      <div class="app-icon xeri">♠</div>
+      <div class="app-info">
+        <h3>Xeri <span class="greek">(ξερή)</span></h3>
+        <p class="desc">Classic Greek card game for iPhone</p>
+        <div class="tags">
+          <span class="tag">iOS</span>
+          <span class="tag blue">Game Center</span>
+        </div>
+      </div>
+      <span class="arrow">→</span>
+    </a>
+
+    <p class="coming-soon">More projects coming soon.</p>
+
+  </div>
+
+  <footer>
+    <p>© <span id="y"></span> Themistoklis Valtinos</p>
+  </footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
