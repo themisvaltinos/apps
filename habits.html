@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Habits — support, features, widget info, and App Store link." />
+  <meta name="theme-color" content="#0a0f14" />
+  <title>Habits — Support</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.65;
+      color: #e8e8ed;
+      background: #0a0f14;
+      min-height: 100vh;
+    }
+
+    .hero {
+      background: linear-gradient(160deg, #0d3320 0%, #0a1a12 40%, #0a0f14 100%);
+      padding: 3.5rem 1.5rem 2.5rem;
+      text-align: center;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+
+    .hero .back {
+      display: inline-block;
+      font-size: 0.82rem;
+      color: #34d399;
+      text-decoration: none;
+      margin-bottom: 1.25rem;
+      opacity: 0.8;
+      transition: opacity 0.2s;
+    }
+
+    .hero .back:hover { opacity: 1; }
+
+    .hero-icon {
+      font-size: 3rem;
+      margin-bottom: 0.75rem;
+      display: block;
+    }
+
+    .hero h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.25rem;
+    }
+
+    .hero .tagline {
+      font-size: 1rem;
+      opacity: 0.6;
+      max-width: 28rem;
+      margin: 0 auto;
+    }
+
+    .container {
+      max-width: 38rem;
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem 4rem;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 16px;
+      padding: 1.75rem 1.5rem;
+      margin-bottom: 1.25rem;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      transition: border-color 0.2s;
+    }
+
+    .card:hover { border-color: rgba(255,255,255,0.14); }
+
+    .card.store-card {
+      text-align: center;
+      padding: 2rem 1.5rem;
+      background: linear-gradient(180deg, rgba(52,211,153,0.08) 0%, rgba(255,255,255,0.04) 100%);
+      border-color: rgba(52,211,153,0.2);
+    }
+
+    .card.store-card h2 { justify-content: center; }
+
+    .card h2 {
+      font-size: 1rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: #34d399;
+      margin-bottom: 0.75rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .card h2 .icon { font-size: 1.15rem; }
+
+    .card p {
+      font-size: 0.95rem;
+      color: rgba(232,232,237,0.8);
+    }
+
+    .card p + p { margin-top: 0.5rem; }
+
+    .card a:not(.store-btn):not(.email-btn) {
+      color: #34d399;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(52,211,153,0.3);
+      transition: border-color 0.2s;
+    }
+
+    .card a:not(.store-btn):not(.email-btn):hover { border-color: #34d399; }
+
+    .store-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      margin-top: 1rem;
+      padding: 0.85rem 1.75rem;
+      background: #000;
+      color: #fff;
+      font-weight: 600;
+      font-size: 0.95rem;
+      border-radius: 12px;
+      text-decoration: none;
+      border: 1px solid rgba(255,255,255,0.15);
+      box-shadow: 0 4px 24px rgba(0,0,0,0.4);
+      transition: transform 0.15s, box-shadow 0.2s, background 0.2s;
+    }
+
+    .store-btn:hover {
+      background: #1a1a1a;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+    }
+
+    .store-hint {
+      margin-top: 0.75rem;
+      font-size: 0.72rem;
+      opacity: 0.35;
+    }
+
+    .email-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-top: 0.75rem;
+      padding: 0.6rem 1.25rem;
+      background: #34d399;
+      color: #0a0f14;
+      font-weight: 600;
+      font-size: 0.9rem;
+      border-radius: 999px;
+      text-decoration: none;
+      border: none;
+      transition: background 0.2s, transform 0.15s;
+    }
+
+    .email-btn:hover {
+      background: #6ee7b7;
+      transform: translateY(-1px);
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.8rem;
+      opacity: 0.35;
+      padding: 2rem 1rem;
+    }
+
+    @media (max-width: 480px) {
+      .hero { padding: 2.5rem 1.25rem 2rem; }
+      .hero h1 { font-size: 1.6rem; }
+      .container { padding: 1.5rem 1rem 3rem; }
+      .card { padding: 1.25rem 1.15rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="hero">
+    <a class="back" href="index.html">← Themistoklis Valtinos</a>
+    <span class="hero-icon">✓</span>
+    <h1>Habits</h1>
+    <p class="tagline">Planner and Heatmap for iPhone</p>
+  </div>
+
+  <div class="container">
+
+    <div class="card store-card">
+      <h2><span class="icon">📱</span> Get the app</h2>
+      <p>Download <strong>Habits</strong> on the App Store.</p>
+      <!-- Replace with your App Store URL when live -->
+      <!--
+      <a class="store-btn" href="https://apps.apple.com/app/idREPLACE_APP_ID" target="_blank" rel="noopener noreferrer">
+        Download on the App Store
+      </a>
+      -->
+      <a class="store-btn" target="_blank" rel="noopener noreferrer">
+        Launching soon
+      </a>
+      <p class="store-hint">App Store link will be added when the app is published.</p>
+    </div>
+
+    <div class="card">
+      <h2><span class="icon">💬</span> Support</h2>
+      <p>For help, bug reports, or feedback, email support and include your device model and iOS version.</p>
+      <a class="email-btn" href="mailto:themis@valtinos.com">✉ Email support</a>
+    </div>
+
+    <div class="card">
+      <h2><span class="icon">🗓️</span> How Habits works</h2>
+      <p>Use the <strong>Habits</strong> tab for daily check-ins, <strong>My Week</strong> for weekly planning and adaptation, and <strong>Heatmap</strong> to visualize consistency over time.</p>
+    </div>
+
+    <div class="card">
+      <h2><span class="icon">🧩</span> Widgets</h2>
+      <p>Habits includes Home Screen widgets. You can configure a specific habit per widget and use multiple widget instances with different habits.</p>
+    </div>
+
+    <div class="card">
+      <h2><span class="icon">🔒</span> Privacy</h2>
+      <p>Read the <a href="habits-privacy.html">Privacy Policy</a>.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>© <span id="y"></span> Themistoklis Valtinos</p>
+  </footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
