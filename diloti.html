@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Habits — support, features, widget info, and App Store link." />
+  <meta name="description" content="Diloti (δηλωτή) — support, gameplay basics, and App Store link." />
   <meta name="theme-color" content="#0a0f14" />
-  <title>Habits — Support</title>
+  <title>Diloti (δηλωτή) — Support</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -18,7 +18,7 @@
     }
 
     .hero {
-      background: linear-gradient(160deg, #0d3320 0%, #0a1a12 40%, #0a0f14 100%);
+      background: linear-gradient(160deg, #4a2f00 0%, #1f1605 40%, #0a0f14 100%);
       padding: 3.5rem 1.5rem 2.5rem;
       text-align: center;
       border-bottom: 1px solid rgba(255,255,255,0.06);
@@ -27,7 +27,7 @@
     .hero .back {
       display: inline-block;
       font-size: 0.82rem;
-      color: #34d399;
+      color: #fbbf24;
       text-decoration: none;
       margin-bottom: 1.25rem;
       opacity: 0.8;
@@ -47,6 +47,12 @@
       font-weight: 700;
       letter-spacing: -0.02em;
       margin-bottom: 0.25rem;
+    }
+
+    .hero h1 .greek {
+      font-weight: 600;
+      opacity: 0.7;
+      font-size: 1.6rem;
     }
 
     .hero .tagline {
@@ -78,8 +84,8 @@
     .card.store-card {
       text-align: center;
       padding: 2rem 1.5rem;
-      background: linear-gradient(180deg, rgba(52,211,153,0.08) 0%, rgba(255,255,255,0.04) 100%);
-      border-color: rgba(52,211,153,0.2);
+      background: linear-gradient(180deg, rgba(251,191,36,0.08) 0%, rgba(255,255,255,0.04) 100%);
+      border-color: rgba(251,191,36,0.2);
     }
 
     .card.store-card h2 { justify-content: center; }
@@ -89,7 +95,7 @@
       font-weight: 600;
       letter-spacing: 0.04em;
       text-transform: uppercase;
-      color: #34d399;
+      color: #fbbf24;
       margin-bottom: 0.75rem;
       display: flex;
       align-items: center;
@@ -106,13 +112,13 @@
     .card p + p { margin-top: 0.5rem; }
 
     .card a:not(.store-btn):not(.email-btn) {
-      color: #34d399;
+      color: #fbbf24;
       text-decoration: none;
-      border-bottom: 1px solid rgba(52,211,153,0.3);
+      border-bottom: 1px solid rgba(251,191,36,0.3);
       transition: border-color 0.2s;
     }
 
-    .card a:not(.store-btn):not(.email-btn):hover { border-color: #34d399; }
+    .card a:not(.store-btn):not(.email-btn):hover { border-color: #fbbf24; }
 
     .store-btn {
       display: inline-flex;
@@ -150,7 +156,7 @@
       gap: 0.5rem;
       margin-top: 0.75rem;
       padding: 0.6rem 1.25rem;
-      background: #34d399;
+      background: #fbbf24;
       color: #0a0f14;
       font-weight: 600;
       font-size: 0.9rem;
@@ -161,9 +167,20 @@
     }
 
     .email-btn:hover {
-      background: #6ee7b7;
+      background: #fcd34d;
       transform: translateY(-1px);
     }
+
+    .suits {
+      display: flex;
+      justify-content: center;
+      gap: 1.25rem;
+      margin-bottom: 1.5rem;
+      font-size: 1.5rem;
+      opacity: 0.25;
+    }
+
+    .suits .red { color: #f87171; }
 
     footer {
       text-align: center;
@@ -184,20 +201,33 @@
 
   <div class="hero">
     <a class="back" href="index.html">← Themistoklis Valtinos</a>
-    <span class="hero-icon">✓</span>
-    <h1>Habits</h1>
-    <p class="tagline">Planner and Heatmap for iPhone</p>
+    <span class="hero-icon">♦</span>
+    <h1>Diloti <span class="greek">(δηλωτή)</span></h1>
+    <p class="tagline">The classic Greek card game for iPhone</p>
   </div>
 
   <div class="container">
 
     <div class="card store-card">
       <h2><span class="icon">📱</span> Get the app</h2>
-      <p>Download <strong>Habits</strong> on the App Store.</p>
-      <a class="store-btn" href="https://apps.apple.com/gr/app/habits-planner-and-heatmap/id6761406902" target="_blank" rel="noopener noreferrer">
-        Download on the App Store
+      <p>Download <strong>Diloti</strong> on the App Store.</p>
+      <a class="store-btn" target="_blank" rel="noopener noreferrer">
+        Launching soon
       </a>
       <p class="store-hint">App Store link will be added when the app is published.</p>
+    </div>
+
+    <div class="suits">
+      <span>♠</span>
+      <span class="red">♥</span>
+      <span class="red">♦</span>
+      <span>♣</span>
+    </div>
+
+    <div class="card">
+      <h2><span class="icon">❤️</span> Diloti</h2>
+      <p>Made with love for the card game many of us grew up playing on holidays, in kafeneia and at the kitchen table.</p>
+      <p>This app preserves the rules, the tension and the moments that make it great, while giving you a polished way to practice and play whenever you want.</p>
     </div>
 
     <div class="card">
@@ -207,18 +237,20 @@
     </div>
 
     <div class="card">
-      <h2><span class="icon">🗓️</span> How Habits works</h2>
-      <p>Use the <strong>Habits</strong> tab for daily check-ins, <strong>My Week</strong> for weekly planning and adaptation, and <strong>Heatmap</strong> to visualize consistency over time.</p>
+      <h2><span class="icon">🃏</span> How to play</h2>
+      <p>In Diloti, you capture cards by matching rank or by combining values. Build and raise declarations, and chase a <strong>Xeri</strong> (+10) by clearing the entire table in a single capture.</p>
+      <p>First player to 61 points wins.</p>
     </div>
 
     <div class="card">
-      <h2><span class="icon">🧩</span> Widgets</h2>
-      <p>Habits includes Home Screen widgets. You can configure a specific habit per widget and use multiple widget instances with different habits.</p>
+      <h2><span class="icon">📊</span> Scoring</h2>
+      <p>End-of-round points: most cards (+4), each Ace (+1), 10♦ (+2), 2♣ (+1), each Xeri (+10).</p>
+      <p>Play fully offline, with no ads and no account required.</p>
     </div>
 
     <div class="card">
       <h2><span class="icon">🔒</span> Privacy</h2>
-      <p>Read the <a href="habits-privacy.html">Privacy Policy</a>.</p>
+      <p>Read the <a href="diloti-privacy.html">Privacy Policy</a>.</p>
     </div>
   </div>
 
